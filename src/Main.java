@@ -2,10 +2,7 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,8 +10,18 @@ public class Main {
         List regList = readFileFromTxt(regFile);
         List<Animal> animals;
         animals = createInstance(regList);
-        System.out.print("Név:"+animals.get(2).getName()+"  ");
-        System.out.println("Kor:"+animals.get(2).getAge());
+        Scanner scanner = new Scanner(System.in);
+       for(int i = 0;i< animals.size();i++){
+           System.out.print("Kérem adja meg a szépség pontszámot "+ animals.get(i).getName()+"-hoz: ");
+           animals.get(i).setBeautyPoint(scanner.nextInt());
+           System.out.print("Kérem adja meg a viselkedés pontszámot "+ animals.get(i).getName()+"-hoz: ");
+           animals.get(i).setBehaviorPoint(scanner.nextInt());
+           animals.get(i).calculateAllPoint();
+       }
+       for(int i = 0;i< animals.size();i++){
+           System.out.print("Név: "+animals.get(i).getName()+", kor: "+animals.get(i).getAge()+", összes pont: "+animals.get(i).getAllPoint());
+           System.out.println();
+       }
 
     }
 
