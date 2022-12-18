@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="020a0d82-01cc-4152-9591-95acdf8b2d9b" name="Changes" comment="start and register animals from txt (https://sites.google.com/view/jatekosjavafeladatok/konzolos-alkalmaz%C3%A1sok/%C3%A1llatok-versenye-1?pli=1)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    <list default="true" id="020a0d82-01cc-4152-9591-95acdf8b2d9b" name="Changes" comment="end first.&#10;Calculate point, use scanner">
+      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +53,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671305744377</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="end first.&#10;Calculate point, use scanner">
+      <created>1671387732104</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671387732104</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -71,6 +76,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="start and register animals from txt (https://sites.google.com/view/jatekosjavafeladatok/konzolos-alkalmaz%C3%A1sok/%C3%A1llatok-versenye-1?pli=1)" />
-    <option name="LAST_COMMIT_MESSAGE" value="start and register animals from txt (https://sites.google.com/view/jatekosjavafeladatok/konzolos-alkalmaz%C3%A1sok/%C3%A1llatok-versenye-1?pli=1)" />
+    <MESSAGE value="end first.&#10;Calculate point, use scanner" />
+    <option name="LAST_COMMIT_MESSAGE" value="end first.&#10;Calculate point, use scanner" />
   </component>
 </project>
