@@ -35,8 +35,7 @@ public class Race {
         try {
 
             Animal animal = (Animal) animals.get(i);
-//            System.out.print("Kérem adja meg a szépség pontszámot " + animal.getName() + "állathoz: ");
-            System.out.print(message + animal.getName() + "állathoz: ");
+            System.out.print(message + animal.getName() + " állathoz: ");
             switch (t){
                 case "beauty":
                     animal.setBeautyPoint(scanner.nextInt());
@@ -46,9 +45,6 @@ public class Race {
                     break;
 
             }
-//            animal.setBeautyPoint(scanner.nextInt());
-//            System.out.print("Kérem adja meg a viselkedés pontszámot " + animal.getName() + "állathoz: ");
-//            animal.setBehaviorPoint(scanner.nextInt());
             truePoint=false;
             animal.calculateAllPoint();
         }catch(InputMismatchException e){

@@ -1,4 +1,5 @@
 import main.Animal;
+import readme.Rules;
 import reg.Registration;
 
 import java.util.*;
@@ -16,6 +17,7 @@ new Main().run();
     private void run() {
         Race race =new Race();
         Registration registration = new Registration();
+        Rules rules = new Rules();
         regList= registration.readFileFromTxt();
         createInstance();
         race.setPoints(animals);
