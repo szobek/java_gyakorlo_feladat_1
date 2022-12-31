@@ -54,4 +54,11 @@ public class Race {
         return truePoint;
 
     }
+    public void createInstance(List regList, List animals) {
+        for(int i = 0;i< regList.size();i++){
+            String all = regList.get(i).toString();
+            animals.add(new Animal(all.split("[|]")[0],Integer.parseInt(all.split("[|]")[1])));
+        }
+    }
+
 }

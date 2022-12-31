@@ -19,7 +19,7 @@ new Main().run();
         Registration registration = new Registration();
         new Rules();
         regList= registration.readFileFromTxt();
-        createInstance();
+        race.createInstance(regList,animals);
         race.setPoints(animals);
 
         for (int i = 0; i < animals.size(); i++) {
@@ -30,12 +30,6 @@ new Main().run();
     }
 
 
-    private void createInstance() {
-        for(int i = 0;i< regList.size();i++){
-            String all = regList.get(i).toString();
-            animals.add(new Animal(all.split("[|]")[0],Integer.parseInt(all.split("[|]")[1])));
-        }
-    }
 
 
 
