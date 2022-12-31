@@ -1,5 +1,6 @@
+package main;
+
 import java.util.Calendar;
-import java.util.Date;
 
 public class Animal {
     private int age;
@@ -37,17 +38,14 @@ private int allPoint;
         return allPoint;
     }
 
-    public int getBeautyPoint() {
-        return beautyPoint;
-    }
-
     public void calculateAllPoint(){
-        allPoint = (maxAgePoint-age*beautyPoint)+(age*behaviorPoint);
+        allPoint = ((maxAgePoint-age)*beautyPoint)+(age*behaviorPoint);
     }
     private void calculateAge(){
         int actualYear = Calendar.getInstance().get(Calendar.YEAR);
         age = actualYear-birthYear;
     }
+
 
 
 }
