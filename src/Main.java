@@ -17,7 +17,7 @@ new Main().run();
     private void run() {
         Race race =new Race();
         Registration registration = new Registration();
-        Rules rules = new Rules();
+        new Rules();
         regList= registration.readFileFromTxt();
         createInstance();
         race.setPoints(animals);
