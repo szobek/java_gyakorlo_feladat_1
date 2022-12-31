@@ -36,14 +36,9 @@ public class Race {
 
             Animal animal = (Animal) animals.get(i);
             System.out.print(message + animal.getName() + " állathoz: ");
-            switch (t){
-                case "beauty":
-                    animal.setBeautyPoint(scanner.nextInt());
-                    break;
-                case "behavior":
-                    animal.setBehaviorPoint(scanner.nextInt());
-                    break;
-
+            switch (t) {
+                case "beauty" -> animal.setBeautyPoint(scanner.nextInt());
+                case "behavior" -> animal.setBehaviorPoint(scanner.nextInt());
             }
             truePoint=false;
             animal.calculateAllPoint();
@@ -55,9 +50,9 @@ public class Race {
 
     }
     public void createInstance(List regList, List animals) {
-        for(int i = 0;i< regList.size();i++){
-            String all = regList.get(i).toString();
-            animals.add(new Animal(all.split("[|]")[0],Integer.parseInt(all.split("[|]")[1])));
+        for (Object animal : regList) {
+            String all = animal.toString();
+            animals.add(new Animal(all.split("[|]")[0], Integer.parseInt(all.split("[|]")[1])));
         }
     }
 

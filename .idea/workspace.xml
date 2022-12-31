@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="020a0d82-01cc-4152-9591-95acdf8b2d9b" name="Changes" comment="refactor code">
-      <change afterPath="$PROJECT_DIR$/src/readme/Rules.java" afterDir="false" />
+    <list default="true" id="020a0d82-01cc-4152-9591-95acdf8b2d9b" name="Changes" comment="move createInstance method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reg.txt" beforeDir="false" afterPath="$PROJECT_DIR$/reg.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Race.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Race.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +76,28 @@
       <option name="project" value="LOCAL" />
       <updated>1672480600941</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="create rules class">
+      <created>1672490729637</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1672490729637</updated>
+    </task>
+    <task id="LOCAL-00006" summary="remove crate instance">
+      <created>1672491027344</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1672491027344</updated>
+    </task>
+    <task id="LOCAL-00007" summary="move createInstance method">
+      <created>1672491391635</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1672491391635</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -98,6 +116,9 @@
     <MESSAGE value="end first.&#10;Calculate point, use scanner" />
     <MESSAGE value="create readne" />
     <MESSAGE value="refactor code" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor code" />
+    <MESSAGE value="create rules class" />
+    <MESSAGE value="remove crate instance" />
+    <MESSAGE value="move createInstance method" />
+    <option name="LAST_COMMIT_MESSAGE" value="move createInstance method" />
   </component>
 </project>
