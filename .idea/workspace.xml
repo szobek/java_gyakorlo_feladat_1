@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="020a0d82-01cc-4152-9591-95acdf8b2d9b" name="Changes" comment="move createInstance method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Race.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Race.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

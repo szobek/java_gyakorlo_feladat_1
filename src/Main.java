@@ -5,7 +5,7 @@ import reg.Registration;
 import java.util.*;
 
 public class Main {
-    List<Animal> animals = new ArrayList<Animal>();
+    Animal[] animals;
 
    List regList = new ArrayList<>();
 
@@ -19,11 +19,12 @@ new Main().run();
         Registration registration = new Registration();
         new Rules();
         regList= registration.readFileFromTxt();
+        animals=new Animal[regList.size()];
         race.createInstance(regList,animals);
         race.setPoints(animals);
 
-        for (int i = 0; i < animals.size(); i++) {
-            System.out.println("Név: " + animals.get(i).getName() + ", kor: " + animals.get(i).getAge() + ", összes pont: " + animals.get(i).getAllPoint());
+        for (int i = 0; i < animals.length; i++) {
+            System.out.println("Név: " + animals[i].getName() + ", kor: " + animals[i].getAge() + ", összes pont: " + animals[i].getAllPoint());
         }
         Animal winner = race.searchWinner(animals);
         System.out.println("A győztes: "+ winner.getName()+" "+winner.getAllPoint()+" ponttal. ");

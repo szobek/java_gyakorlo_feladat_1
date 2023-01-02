@@ -6,20 +6,20 @@ import java.util.Scanner;
 
 public class Race {
 
-    public void setPoints(List animals) {
+    public void setPoints(Animal[] animals) {
 
-        for (int i = 0; i < animals.size(); i++) {
+        for (int i = 0; i < animals.length; i++) {
             while (getPointsFromUser("Kérem adja meg a szépség pontszámot ",animals, i,"beauty")){}
             while (getPointsFromUser("Kérem adja meg a viselkedés pontszámot ",animals, i,"behavior")){}
         }
 
     }
 
-    public Animal searchWinner(List animals) {
+    public Animal searchWinner(Animal[] animals) {
         int point = 0;
         Animal winner = null;
-        for (int i = 0; i < animals.size(); i++) {
-            Animal animal = (Animal) animals.get(i);
+        for (int i = 0; i < animals.length; i++) {
+            Animal animal = animals[i];
             int allPoint = animal.getAllPoint();
             if (allPoint > point) {
                 point = allPoint;
@@ -29,12 +29,12 @@ public class Race {
         return winner;
     }
 
-    private boolean getPointsFromUser(String message,List animals, int i, String t) {
+    private boolean getPointsFromUser(String message,Animal[] animals, int i, String t) {
         Scanner scanner = new Scanner(System.in);
         boolean truePoint = true;
         try {
 
-            Animal animal = (Animal) animals.get(i);
+            Animal animal = animals[i];
             System.out.print(message + animal.getName() + " állathoz: ");
             switch (t) {
                 case "beauty" -> animal.setBeautyPoint(scanner.nextInt());
@@ -49,10 +49,10 @@ public class Race {
         return truePoint;
 
     }
-    public void createInstance(List regList, List animals) {
-        for (Object animal : regList) {
-            String all = animal.toString();
-            animals.add(new Animal(all.split("[|]")[0], Integer.parseInt(all.split("[|]")[1])));
+    public void createInstance(List regList,Animal[] animals) {
+        for (int i=0;i<animals.length;i++) {
+            String all = regList.get(i).toString();
+            animals[i]=new Animal(all.split("[|]")[0], Integer.parseInt(all.split("[|]")[1]));
         }
     }
 
