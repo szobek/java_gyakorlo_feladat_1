@@ -28,6 +28,7 @@ new Main().run();
         }
         Animal winner = race.searchWinner(animals);
         System.out.println("A győztes: "+ winner.getName()+" "+winner.getAllPoint()+" ponttal. ");
+        race.writeReverseByAllPoint(animals);
     }
 
 

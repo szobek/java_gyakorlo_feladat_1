@@ -1,6 +1,7 @@
 package main;
 
 import java.util.Calendar;
+import java.util.UUID;
 
 public class Animal {
     private int age;
@@ -12,9 +13,13 @@ private final int birthYear;
 private int allPoint;
 
 
+    private String uniqueID;
+
+
     public Animal( String name, int birthYear) {
         this.name = name;
         this.birthYear=birthYear;
+        this.uniqueID= UUID.randomUUID().toString();
         calculateAge();
     }
 
@@ -44,6 +49,9 @@ private int allPoint;
     private void calculateAge(){
         int actualYear = Calendar.getInstance().get(Calendar.YEAR);
         age = actualYear-birthYear;
+    }
+    public String getUniqueID() {
+        return uniqueID;
     }
 
 
