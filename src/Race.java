@@ -59,12 +59,9 @@ public class Race {
     }
 
     public void writeReverseByAllPoint(Animal[] animals) {
-        List<Animal> points = new ArrayList<>();
         Animal[] rev = new Animal[animals.length];
+        List<Animal> points = new ArrayList<>(Arrays.asList(animals));
         int max = 0;
-        for (int i = 0; i < animals.length; i++) {
-            points.add(animals[i]);
-        }
         int i = 0;
         System.out.println(points.size());
         while (points.size() == 0) {
