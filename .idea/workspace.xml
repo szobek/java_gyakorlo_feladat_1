@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="020a0d82-01cc-4152-9591-95acdf8b2d9b" name="Changes" comment="error in rev point fn">
+    <list default="true" id="020a0d82-01cc-4152-9591-95acdf8b2d9b" name="Changes" comment="modify writeReverseByAllPoint fn">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Race.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Race.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Animal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673174697109</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="modify writeReverseByAllPoint fn">
+      <created>1673175374430</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1673175374430</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -134,6 +144,7 @@
     <MESSAGE value="move createInstance method" />
     <MESSAGE value="animals list change to animals array" />
     <MESSAGE value="error in rev point fn" />
-    <option name="LAST_COMMIT_MESSAGE" value="error in rev point fn" />
+    <MESSAGE value="modify writeReverseByAllPoint fn" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify writeReverseByAllPoint fn" />
   </component>
 </project>

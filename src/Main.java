@@ -28,7 +28,12 @@ new Main().run();
         }
         Animal winner = race.searchWinner(animals);
         System.out.println("A győztes: "+ winner.getName()+" "+winner.getAllPoint()+" ponttal. ");
-        race.writeReverseByAllPoint(animals);
+        List<Animal> dl = race.writeReverseByAllPoint(animals);
+        Collections.sort(dl);
+        for (Animal animal:dl){
+            System.out.println(animal.getName() + " | "+animal.getAllPoint());
+        }
+
     }
 
 

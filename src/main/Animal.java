@@ -1,9 +1,10 @@
 package main;
 
+import javax.xml.crypto.Data;
 import java.util.Calendar;
 import java.util.UUID;
 
-public class Animal {
+public class Animal implements Comparable<Animal> {
     private int age;
     private final String name;
     private int beautyPoint;
@@ -54,6 +55,8 @@ private int allPoint;
         return uniqueID;
     }
 
-
-
+    @Override
+    public int compareTo(Animal o) {
+        return o.getAllPoint()-this.allPoint ;
+    }
 }
