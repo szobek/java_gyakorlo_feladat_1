@@ -51,9 +51,6 @@ private int allPoint;
         int actualYear = Calendar.getInstance().get(Calendar.YEAR);
         age = actualYear-birthYear;
     }
-    public String getUniqueID() {
-        return uniqueID;
-    }
 
     @Override
     public int compareTo(Animal o) {

@@ -1,2 +1,5 @@
 alex|2007
 Blöki|2002
+Mangó|2006
+Kókusz|2006
+Pösze|2006
